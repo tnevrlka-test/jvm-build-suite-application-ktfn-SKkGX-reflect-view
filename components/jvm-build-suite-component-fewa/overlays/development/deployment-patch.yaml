@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-fewa
+  namespace: jvm-build-qceg-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/rh_ee_tnevrlka/test-images@sha256:31bf8cef260fe256f790293c6b4c4a802d2a428c0d2c56c9b3a19b7cb2087ba5
+        name: container-image
+        resources: {}
+status: {}
