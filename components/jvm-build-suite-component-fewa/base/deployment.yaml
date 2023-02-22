@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: jvm-build-suite-component-fewa
     spec:
       containers:
-      - image: quay.io/rh_ee_tnevrlka/test-images:f5823edddc1c4009928b0406c23cbe5a
+      - image: quay.io/rh_ee_tnevrlka/test-images@sha256:31bf8cef260fe256f790293c6b4c4a802d2a428c0d2c56c9b3a19b7cb2087ba5
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
